@@ -1,0 +1,27 @@
+#header 
+  #logo
+    Reader
+  #add-block
+    %form{:id=>"add-form", :method=>"post", :action=>"/subscription/add"}
+      %input{:type=>"text", :name=>"url", :id=>"url"}
+      %input{:type=>"submit", :value=>"Add Subscription"}
+  #search-block
+    %form{:id=>"search-form", :method=>"get", :action=>"/search"}
+      %input{:type=>"text", :name=>"q", :id=>"q"}
+      %input{:type=>"submit", :value=>"Search"}
+  -#%div~ localvar
+
+#wrapper
+  #left
+    left
+    #subscriptions
+      %ul
+        -@subscriptions.each do |subscription|
+          %li== <a href="#{subscription.url}">{subscription.label}.#{subscription.sort}</a>
+
+  #right
+    right column
+
+    #rows
+      %div.row
+        row!

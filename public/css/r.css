@@ -1,0 +1,30 @@
+*{margin:0px;padding:0px;overflow:hidden}
+div{}
+div#header{position:absolute;top:0px;left:0px;right:0px;height:60px}
+div#wrapper{position:absolute;top:60px;left:0px;right:0px;bottom:0px;}
+div#left{position:absolute;top:0px;bottom:0px;left:0px;width:20%;overflow-y:auto; border: 1px solid red;}
+div#right{position:absolute;top:0px;bottom:0px;right:0px;width:80%;overflow-y:auto; border: 1px solid green;}
+
+#rows .row {
+    height: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#header form {
+  display: inline;
+}
+#add-block {
+  display: inline;
+}
+#search-block {
+  display: inline;
+}
+#header input[type="text"] {
+  border: 1px solid #000;
+  padding: 2px;
+}
+#header input[type="submit"] {
+  border: 1px solid #000;
+  padding: 2px;
+}
+
